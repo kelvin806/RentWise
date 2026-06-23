@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentWise</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            RentWise
+        </div>
+
+
+        <nav class="desktop-nav">
+            <a href="#">Rentals</a>
+            <a href="#">Verification</a>
+            <a href="#">Help</a>
+        </nav>
+
+
+        <div class="nav-right">
+
+            <a href="#">
+                Login
+            </a>
+
+            <button>
+                List your property
+            </button>
+
+        </div>
+
+
+
+        <div class="menu" id="menu-btn">
+            ☰
+        </div>
+
+
+
+        <div class="mobile-nav" id="mobile-nav">
+
+            <a href="#">
+                Rentals
+            </a>
+
+            <a href="#">
+                Verification
+            </a>
+
+            <a href="#">
+                Help
+            </a>
+
+
+            <a href="#">
+                Login
+            </a>
+
+
+            <button>
+                List your property
+            </button>
+
+
+        </div>
+
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-overlay">
+
+            <h1>
+                Find a Home You Can Trust.
+            </h1>
+
+            <p>
+                Verified listings and secure payments for urban professionals across Nigeria.
+            </p>
+
+
+            <form class="search-box" id="search-form">
+
+
+                <div class="search-item">
+
+                    <select id="location">
+
+                        <option value="Lagos">
+                            📍 Lagos
+                        </option>
+
+                        <option value="Abuja">
+                            Abuja
+                        </option>
+
+                        <option value="Port Harcourt">
+                            Port Harcourt
+                        </option>
+
+                        <option value="Ibadan">
+                            Ibadan
+                        </option>
+
+
+                    </select>
+
+
+                </div>
+
+
+
+
+                <div class="search-item">
+
+
+                    <select id="property-type">
+
+
+                        <option value="Apartment">
+                            Apartment
+                        </option>
+
+
+                        <option value="Duplex">
+                            Duplex
+                        </option>
+
+
+                        <option value="Studio">
+                            Studio
+                        </option>
+
+
+                    </select>
+
+
+
+                </div>
+
+
+
+
+                <button type="submit">
+
+                    Search
+
+                </button>
+
+
+            </form>
+
+
+            <div class="hero-features">
+
+                <span>✓ Verified Listings</span>
+                <span>✓ Secure Payments</span>
+                <span>✓ Direct Chat with Landlords</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Featured Listings -->
+
+    <section class="featured">
+
+        <div class="section-title">
+
+            <div>
+                <h2>
+                    Featured Listings
+                </h2>
+
+                <p>
+                    Hand-picked properties with 100% inspection guarantee.
+                </p>
+
+            </div>
+
+
+            <a href="#">
+                View All →
+            </a>
+
+        </div>
+
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <div class="image-wrapper">
+
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="Apartment">
+
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>
+                        Modern 3BR Flat
+                        <span>
+                            ₦4.5M/yr
+                        </span>
+                    </h3>
+
+
+                    <p>
+                        📍 Lekki Phase 1, Lagos
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>3 Beds</span>
+                        <span>3 Baths</span>
+                        <span>24/7 Power</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <div class="image-wrapper">
+
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="House">
+
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>
+                        Executive Duplex
+                        <span>
+                            ₦12M/yr
+                        </span>
+                    </h3>
+
+
+                    <p>
+                        📍 Maitama, Abuja
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>5 Beds</span>
+                        <span>4 Cars</span>
+                        <span>Gated</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <div class="image-wrapper">
+
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="Studio">
+
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>
+                        Luxury Studio
+                        <span>
+                            ₦2.2M/yr
+                        </span>
+                    </h3>
+
+
+                    <p>
+                        📍 GRA Phase 2, PH
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>1 Bed</span>
+                        <span>Full AC</span>
+                        <span>Gym</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- How it works -->
+
+    <section class="works">
+
+        <h2>
+            How RentWise Works
+        </h2>
+
+        <p>
+            We've removed the friction from finding your next home.
+        </p>
+
+
+
+        <div class="steps">
+
+
+            <div>
+
+                <div class="icon">
+                    🔍
+                </div>
+
+                <h3>
+                    1. Search
+                </h3>
+
+                <p>
+                    Browse thousands of verified apartments and find exactly what you need.
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <div class="icon">
+                    📋
+                </div>
+
+                <h3>
+                    2. Book Inspection
+                </h3>
+
+                <p>
+                    Schedule an inspection directly through the app.
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <div class="icon">
+                    🛡
+                </div>
+
+                <h3>
+                    3. Secure Payment
+                </h3>
+
+                <p>
+                    Pay rent securely through our escrow system.
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Landlord CTA -->
+
+    <section class="landlord">
+
+        <div>
+
+            <h2>
+                Are you a landlord?
+            </h2>
+
+            <p>
+                Join thousands of verified owners and reach high-quality tenants today.
+            </p>
+
+        </div>
+
+
+        <button>
+            List Your Property
+        </button>
+
+
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+
+
+    <footer>
+
+
+        <div class="footer-top">
+
+
+            <div class="footer-brand">
+
+
+                <h3>
+                    RentWise
+                </h3>
+
+
+                <p>
+                    The most trusted rental marketplace in Nigeria for verified homes and secure deals.
+                </p>
+
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+
+                <a href="#">
+                    About Us
+                </a>
+
+
+                <a href="#">
+                    Contact
+                </a>
+
+
+                <a href="#">
+                    Terms of Service
+                </a>
+
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+
+                <a href="#">
+                    Nigeria (NGN)
+                </a>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+                © 2026 RentWise Nigeria. Verified & Secure.
+            </p>
+
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
