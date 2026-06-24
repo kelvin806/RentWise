@@ -80,17 +80,15 @@ background:rgba(255,255,255,.85);
 
 backdrop-filter:blur(10px);
 
-
-position:sticky;
-
-top:0;
-
-z-index:1000;
-
-
 box-shadow:0 5px 20px rgba(0,0,0,.06);
 
 
+}
+
+#navbar-container{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 
@@ -771,12 +769,20 @@ margin-top:70px;
 
 
 
-.steps div{
+.steps > div{
 
 
 padding:0 25px;
 
 
+}
+
+.steps > div p{
+    max-width:260px;
+    margin:0 auto;
+    line-height: 1.7;
+    opacity: .75;
+    font-size: 14;
 }
 
 
@@ -829,19 +835,6 @@ font-size:18px;
 
 
 
-.steps p{
-
-
-line-height:1.7;
-
-
-opacity:.75;
-
-
-font-size:14px;
-
-
-}
 
 
 

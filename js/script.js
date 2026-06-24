@@ -1,9 +1,19 @@
+fetch("./components/navbar.html")
+.then(response => response.text())
+.then(data => {
+
+
+document.getElementById("navbar-container").innerHTML = data;
+
+
+
 const menuBtn = document.getElementById("menu-btn");
 
 const mobileNav = document.getElementById("mobile-nav");
 
 
-menuBtn.addEventListener("click",()=>{
+
+menuBtn.onclick = function(){
 
 
 mobileNav.classList.toggle("active");
@@ -12,15 +22,33 @@ mobileNav.classList.toggle("active");
 
 if(mobileNav.classList.contains("active")){
 
-menuBtn.textContent="✕";
+menuBtn.innerHTML = "✕";
 
 }
 
 else{
 
-menuBtn.textContent="☰";
+menuBtn.innerHTML = "☰";
 
 }
+
+
+
+};
+
+
+
+});
+
+
+
+
+fetch("./components/footer.html")
+.then(response => response.text())
+.then(data => {
+
+
+document.getElementById("footer").innerHTML = data;
 
 
 });
@@ -57,3 +85,7 @@ console.log(data);
 
 
 });
+
+
+
+
